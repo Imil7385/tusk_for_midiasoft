@@ -1,0 +1,13 @@
+﻿<Window x:Class="tp_wpf_kur.new_moto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tp_wpf_kur"
+        mc:Ignorable="d"
+        Title="new_moto" Height="308.502" Width="675.304">
+    <Grid>
+        <ComboBox Width="150" Height="25" x:Name="comboBox1" Margin="10,10,507,243" IsEditable="True"></ComboBox>
+        <ComboBox Width="150" Height="25" x:Name="comboBox2" Margin="180,10,337,243" IsEditable="True" ></ComboBox>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Application x:Class="tp_wpf_kur.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:tp_wpf_kur"
+             StartupUri="buy_moto.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

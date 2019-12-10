@@ -1,0 +1,24 @@
+﻿<Window x:Class="tp_wpf_kur.buy_moto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tp_wpf_kur"
+        mc:Ignorable="d"
+        Title="buy_moto" Height="382.55" Width="761.678">
+    <Grid>
+        <DataGrid Width="350" Height="200" x:Name="dataGrid1" BorderBrush="#FF0080FD" SelectedCellsChanged="dataGrid1_SelectedCellsChanged">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+        </DataGrid>
+        <Button x:Name="button1" Width="100" Height="25" Content="Новый" Margin="38,120,616,207" Click="button1_Click"></Button>
+        <TextBox Height="25" x:Name="textBox1" Margin="374,24,238,303"/>
+        <TextBox Height="25" x:Name="textBox2" Margin="541,24,71,303"/>
+        <ComboBox x:Name="comboBox1" Width="150" Height="25" Margin="38,24,566,303" SelectionChanged="comboBox1_SelectionChanged"/>
+        <ComboBox x:Name="comboBox2" Width="150" Height="25" Margin="202,24,402,303"/>
+    </Grid>
+</Window>
