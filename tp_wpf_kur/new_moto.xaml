@@ -5,9 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tp_wpf_kur"
         mc:Ignorable="d"
-        Title="new_moto" Height="308.502" Width="675.304">
+        Title="new_moto" Height="308.502" Width="946.412">
     <Grid>
-        <ComboBox Width="150" Height="25" x:Name="comboBox1" Margin="10,10,507,243" IsEditable="True"></ComboBox>
-        <ComboBox Width="150" Height="25" x:Name="comboBox2" Margin="180,10,337,243" IsEditable="True" ></ComboBox>
+        <Label Width="150" Height="25" Margin="6,9,782,244">Страна производителя</Label>
+        <Label Width="150" Height="25" Margin="176,8,612,245">Марка</Label>
+        <Label Width="150" Height="25" Margin="668,10,120,243">Модель</Label>
+        <Label Width="150" Height="25" Margin="331,9,457,244">Класс мотоцикла</Label>
+        <Label Width="150" Height="25" Margin="451,10,337,243">Тип двигателя</Label>
+        <Label Width="150" Height="25" Margin="553,10,235,243">Объём двигателя</Label>
+        <Label Height="25" Margin="778,10,40,243">Цена Руб.</Label>
+        <ComboBox Width="150" Height="25" x:Name="comboBox1" Margin="6,34,782,219" IsEditable="True" SelectionChanged="comboBox1_SelectionChanged"></ComboBox>
+        <ComboBox Width="150" Height="25" x:Name="comboBox2" Margin="176,34,612,219" IsEditable="True"></ComboBox>
+        <ComboBox Height="25" x:Name="comboBox3" Margin="331,34,487,219" IsEditable="True"/>
+        <ComboBox Height="25" x:Name="comboBox4" Margin="456,35,390,218" IsEditable="True"/>
+        <ComboBox Height="25" x:Name="comboBox5" Margin="553,35,270,218" IsEditable="True"/>
+        <ComboBox Height="25" x:Name="comboBox6" Margin="673,34,165,219" IsEditable="True"/>
+        <TextBox Width="100" Height="25" x:Name="textBox1" Margin="778,34,60,220"></TextBox>
+        <Button Width="100" Height="30" x:Name="button1" Margin="427,228,411,20">Добавить</Button>
     </Grid>
 </Window>
