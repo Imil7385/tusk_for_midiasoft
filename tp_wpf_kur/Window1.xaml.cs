@@ -31,7 +31,7 @@ namespace tp_wpf_kur
             OleDbDataAdapter DataAdapter = new OleDbDataAdapter();
             DataTable DT = new DataTable();
             DataSet DS = new DataSet();
-
+            //MessageBox.Show(id_parsing.ToString());
             id = id_parsing - 1;
             conn = new OleDbConnection(connectionString);
             string text = "SELECT Users.User_id, Users.Worker_position, Users.name, Users.Last_name FROM Users";
@@ -43,9 +43,9 @@ namespace tp_wpf_kur
             DataAdapter.Fill(DS);
             DT = DS.Tables[0];
             InitializeComponent();
-            textBox1.Text = DT.Rows[id][1].ToString();
+            textBox1.Text = DT.Rows[id][3].ToString();
             textBox2.Text = DT.Rows[id][2].ToString();
-            textBox3.Text = DT.Rows[id][3].ToString();
+            textBox3.Text = DT.Rows[id][1].ToString();
             //Вывод в datagrid
             conn.Close();
             //SELECT moto_list.moto_mark, moto_list.moto_model, moto_storage.moto_count FROM moto_list INNER JOIN moto_storage ON moto_list.moto_id = moto_storage.moto_id;
@@ -70,21 +70,35 @@ namespace tp_wpf_kur
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Window taskWindow = new moto_storage();
+            Window taskWindow = new moto_storage(id+1);
             taskWindow.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            Window taskWindow = new buy_moto();
+            Window taskWindow = new buy_moto(id+1);
             taskWindow.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-            Window taskWindow = new sale_moto();
+            Window taskWindow = new sale_moto(id+1);
+            taskWindow.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            Window taskWindow = new autor();
+            taskWindow.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            Window taskWindow = new kit_bay(id+1);
             taskWindow.Show();
             this.Hide();
         }

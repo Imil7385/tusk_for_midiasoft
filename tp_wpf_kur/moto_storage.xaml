@@ -8,5 +8,6 @@
         Title="moto_storage" Height="337.248" Width="578.859">
     <Grid>
         <DataGrid Width="350" Height="200" x:Name="dataGrid1"></DataGrid>
+        <Button Width="100" Height="25" Content="Назад" Margin="56,271,415,10" Click="Button_Click"></Button>
     </Grid>
 </Window>

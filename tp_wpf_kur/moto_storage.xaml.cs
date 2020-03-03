@@ -21,9 +21,11 @@ namespace tp_wpf_kur
     /// </summary>
     public partial class moto_storage : Window
     {
-        public moto_storage()
+        int id_parsing;
+        public moto_storage(int id)
         {
             InitializeComponent();
+            id_parsing = id;
             OleDbConnection conn1;
             string connectionString = @"Provider = Microsoft.JET.OLEDB.4.0; Data Source = |DataDirectory|\\MotoDB.mdb";
             OleDbCommand MyCommand1 = new OleDbCommand();
@@ -41,6 +43,13 @@ namespace tp_wpf_kur
             DT1 = DS1.Tables[0];
             dataGrid1.ItemsSource = DT1.DefaultView;
             conn1.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window tuskWindow = new Window1(id_parsing);
+            tuskWindow.Show();
+            this.Hide();
         }
     }
 }

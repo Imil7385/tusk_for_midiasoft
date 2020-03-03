@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tp_wpf_kur"
         mc:Ignorable="d"
-        Title="buy_moto" Height="382.55" Width="761.678">
+        Title="buy_moto" Height="542.15" Width="1132.678">
     <Grid>
-        <DataGrid Width="350" Height="200" x:Name="dataGrid1" BorderBrush="#FF0080FD" SelectedCellsChanged="dataGrid1_SelectedCellsChanged">
+        <DataGrid x:Name="dataGrid1" BorderBrush="#FF0080FD" SelectedCellsChanged="dataGrid1_SelectedCellsChanged" Margin="337,31,10,259">
             <DataGrid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Red" Offset="0"/>
@@ -15,10 +15,32 @@
                 </LinearGradientBrush>
             </DataGrid.Background>
         </DataGrid>
-        <Button x:Name="button1" Width="100" Height="25" Content="Новый" Margin="38,120,616,207" Click="button1_Click"></Button>
-        <TextBox Height="25" x:Name="textBox1" Margin="374,24,238,303"/>
-        <TextBox Height="25" x:Name="textBox2" Margin="541,24,71,303"/>
-        <ComboBox x:Name="comboBox1" Width="150" Height="25" Margin="38,24,566,303" SelectionChanged="comboBox1_SelectionChanged"/>
-        <ComboBox x:Name="comboBox2" Width="150" Height="25" Margin="202,24,402,303"/>
+        <Button x:Name="button1" Width="100" Height="25" Content="Новый" Margin="832,364,193,122" Click="button1_Click"></Button>
+        <Button x:Name="button2" Width="100" Height="25" Content="Закупить" Margin="832,404,193,81" Click="button2_Click"></Button>
+        <Button x:Name="button3" Width="100" Height="25" Content="Назад" Margin="602,404,423,81" Click="button3_Click"></Button>
+        <TextBox x:Name="textBox1" Margin="197,34,803,447"/>
+        <TextBox x:Name="textBox2" Margin="197,69,803,412"/>
+        <TextBox x:Name="textBox3" Margin="197,104,803,377"/>
+        <TextBox x:Name="textBox4" Margin="197,139,803,342"/>
+        <TextBox x:Name="textBox5" Margin="197,174,803,307"/>
+        <TextBox x:Name="textBox6" Margin="197,209,803,272"/>
+        <TextBox x:Name="textBox7" Margin="197,244,803,237"/>
+        <TextBox x:Name="textBox8" Margin="197,279,803,202"/>
+        <TextBox x:Name="textBox9" Margin="197,314,803,167"/>
+        <TextBox x:Name="textBox10" Margin="197,349,803,132"/>
+        <TextBox x:Name="textBox11" Margin="197,387,803,94"/>
+        <TextBox x:Name="textBox12" Margin="197,420,803,61"/>
+        <Label Height="25" Content="Страна" Margin="82,34,933,452"/>
+        <Label Height="25" Content="Марка" Margin="82,69,933,417"/>
+        <Label Height="25" Content="Модель" Margin="82,104,933,382"/>
+        <Label Height="25" Content="Класс" Margin="82,139,933,347"/>
+        <Label Height="25" Content="Тип двигателя" Margin="82,174,933,312"/>
+        <Label Height="25" Content="Объём двигателя" Margin="82,209,933,277"/>
+        <Label Height="25" Content="Год выпуска" Margin="82,352,933,134"/>
+        <Label Height="25" Content="Цена" Margin="82,387,933,99"/>
+        <Label Height="25" Content="Количество" Margin="82,420,933,66"/>
+        <Label Height="25" Content="Сухой вес" Margin="82,244,933,242"/>
+        <Label Height="25" Content="Мощность двигателя" Margin="82,279,933,207"/>
+        <Label Height="25" Content="Максимальная скорость" Margin="82,314,933,172"/>
     </Grid>
 </Window>

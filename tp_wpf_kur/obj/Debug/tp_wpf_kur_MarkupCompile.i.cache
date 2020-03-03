@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Imil\Desktop\tp_wpf_kur 0.4\tp_wpf_kur\obj\Debug\
+C:\Users\Imil\Desktop\tp_wpf_kur 0.7.7\tp_wpf_kur\obj\Debug\
 tp_wpf_kur
 none
 false
 DEBUG;TRACE
-C:\Users\Imil\Desktop\tp_wpf_kur 0.4\tp_wpf_kur\App.xaml
-6-848614135
+C:\Users\Imil\Desktop\tp_wpf_kur 0.7.7\tp_wpf_kur\App.xaml
+11-1734272563
 
-14-422679617
-131569487696
-Autorisation.xaml;buy_moto.xaml;moto_storage.xaml;new_moto.xaml;sale_moto.xaml;Window1.xaml;
+19602952473
+16-434409178
+autor.xaml;Autorisation(unstable).xaml;buy_moto.xaml;kit_bay.xaml;kit_new.xaml;moto_storage.xaml;new_moto.xaml;sale_moto.xaml;sale_moto_not_upgrade.xaml;sale_moto_upgrage.xaml;Window1.xaml;
 
-False
+True
 

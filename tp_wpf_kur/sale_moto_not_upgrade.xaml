@@ -1,0 +1,51 @@
+﻿<Window x:Class="tp_wpf_kur.sale_moto_not_upgrade"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tp_wpf_kur"
+        mc:Ignorable="d"
+        Title="sale_moto_not_upgrade" Height="542.15" Width="1132.678">
+    <Grid>
+        <TextBox x:Name="textBox1" Margin="197,34,803,447"/>
+        <TextBox x:Name="textBox2" Margin="197,69,803,412"/>
+        <TextBox x:Name="textBox3" Margin="197,104,803,377"/>
+        <TextBox x:Name="textBox4" Margin="197,139,803,342"/>
+        <TextBox x:Name="textBox5" Margin="197,174,803,307"/>
+        <TextBox x:Name="textBox6" Margin="197,209,803,272"/>
+        <TextBox x:Name="textBox7" Margin="197,244,803,237"/>
+        <TextBox x:Name="textBox8" Margin="197,279,803,202"/>
+        <TextBox x:Name="textBox9" Margin="197,314,803,167"/>
+        <TextBox x:Name="textBox10" Margin="197,349,803,132"/>
+        <TextBox x:Name="textBox11" Margin="197,387,803,94"/>
+        <TextBox x:Name="textBox12" Margin="452,387,548,94"/>
+        <TextBox x:Name="textBox13" Margin="607,29,393,452"/>
+        <TextBox x:Name="textBox14" Margin="607,64,393,417"/>
+        <TextBox x:Name="textBox15" Margin="607,99,393,382"/>
+        <TextBox x:Name="textBox16" Margin="607,134,393,347"/>
+        <TextBox x:Name="textBox17" Margin="607,174,393,307"/>
+        <TextBox x:Name="textBox18" Margin="607,209,393,272"/>
+        <Label Height="25" Content="Страна" Margin="82,34,933,452"/>
+        <Label Height="25" Content="Марка" Margin="82,69,933,417"/>
+        <Label Height="25" Content="Модель" Margin="82,104,933,382"/>
+        <Label Height="25" Content="Класс" Margin="82,139,933,347"/>
+        <Label Height="25" Content="Тип двигателя" Margin="82,174,933,312"/>
+        <Label Height="25" Content="Объём двигателя" Margin="82,209,933,277"/>
+        <Label Height="25" Content="Год выпуска" Margin="82,352,933,134"/>
+        <Label Height="25" Content="Цена закупа" Margin="82,387,933,99"/>
+        <Label Height="25" Content="Цена продажи" Margin="345,387,678,99"/>
+        <Label Height="25" Content="Сухой вес" Margin="82,244,933,242"/>
+        <Label Height="25" Content="Мощность двигателя" Margin="82,279,933,207"/>
+        <Label Height="25" Content="Максимальная скорость" Margin="82,314,933,172"/>
+        <Label Height="25" Content="Фамилия" Margin="492,34,523,452"/>
+        <Label Height="25" Content="Имя" Margin="492,64,523,422"/>
+        <Label Height="25" Content="Отчество" Margin="492,104,523,382"/>
+        <Label Height="25" Content="Серия и номер паспорта" Margin="492,134,523,352"/>
+        <Label Height="25" Content="Дата рождения" Margin="492,169,523,317"/>
+        <Label Height="25" Content="Номер телефона" Margin="492,209,523,277"/>
+
+        
+        <Button Width="100" Height="25" x:Name="button1" Content="Назад" Margin="984,476,41,10" Click="button1_Click"></Button>
+        <Button Width="100" Height="25" x:Name="button2" Content="$$$" Margin="477,442,548,44" Click="button2_Click"/>
+    </Grid>
+</Window>

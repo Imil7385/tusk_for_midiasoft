@@ -13,10 +13,12 @@
         <TextBox Width="150" Height="25" x:Name="textBox1" Margin="99,10,297,420"></TextBox>
         <TextBox Width="150" Height="25" x:Name="textBox2" Margin="99,40,297,391"></TextBox>
         <TextBox Width="150" Height="25" x:Name="textBox3" Margin="99,70,297,362"></TextBox>
-        <DataGrid Width="350" Height="200" x:Name="dataGrid1"></DataGrid>
-        
+        <DataGrid Width="350" Height="200" x:Name="dataGrid1" Margin="186,125,10,131"></DataGrid>
+
         <Button Width="50" Height="25" x:Name="button1" Content="Склад" Margin="28,177,468,254" Click="button1_Click"></Button>
         <Button Width="80" Height="25" x:Name="button2" Content="Закупка мото" Margin="13,225,453,206" Click="button2_Click"></Button>
-        <Button Width="85" Height="25" x:Name="button3" Content="Продажа мото" Margin="0,270,461,161" Click="button3_Click"></Button>
+        <Button Width="85" Height="25" x:Name="button3" Content="Продажа мото" Margin="28,308,433,123" Click="button3_Click"></Button>
+        <Button Height="25" Content="Другой пользователь" Margin="367,23,31,408" x:Name="button4" Click="button4_Click"/>
+        <Button Height="25" x:Name="button5" Content="Закупка деталей" Margin="10,255,419,176" Click="button5_Click"/>
     </Grid>
 </Window>

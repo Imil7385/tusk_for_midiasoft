@@ -1,0 +1,16 @@
+﻿<Window x:Class="tp_wpf_kur.autor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tp_wpf_kur"
+        mc:Ignorable="d"
+        Title="autor" Height="300" Width="300">
+    <Grid>
+        <Label Width="100" Height="25" Margin="96,62,96,182">Введите логин:</Label>
+        <Label Width="100" Height="25" Margin="96,122">Введите пароль:</Label>
+        <ComboBox Width="100" Height="25" Margin="96,92,96,152" x:Name="comboBox1"></ComboBox>
+        <TextBox Width="100" Height="25" x:Name="textBox1" Margin="96,147,96,97"></TextBox>
+        <Button Width="100" Height="25" x:Name="button1" Margin="96,177,96,67" Click="button1_Click">Enter</Button>
+    </Grid>
+</Window>

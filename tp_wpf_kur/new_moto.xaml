@@ -5,9 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tp_wpf_kur"
         mc:Ignorable="d"
-        Title="new_moto" Height="308.502" Width="675.304">
+        Title="new_moto" Height="308.502" Width="946.412">
     <Grid>
-        <ComboBox Width="150" Height="25" x:Name="comboBox1" Margin="10,10,507,243" IsEditable="True"></ComboBox>
-        <ComboBox Width="150" Height="25" x:Name="comboBox2" Margin="180,10,337,243" IsEditable="True" ></ComboBox>
+        <Label Width="150" Height="25" Margin="6,9,782,244" x:Name="lab1">Страна производителя</Label>
+        <Label Width="150" Height="25" Margin="176,8,612,245">Марка</Label>
+        <Label Width="150" Height="25" Margin="668,10,120,243">Модель</Label>
+        <Label Width="150" Height="25" Margin="331,9,457,244">Класс мотоцикла</Label>
+        <Label Width="150" Height="25" Margin="451,10,337,243">Тип двигателя</Label>
+        <Label Width="150" Height="25" Margin="553,10,235,243">Объём двигателя</Label>
+        <Label Height="25" Margin="778,10,40,243">Цена Руб.</Label>
+        <Label Height="25" Margin="10,64,819,189">Дата выпуска Год</Label>
+        <Label Height="25" Margin="176,64,662,189">Вес</Label>
+        <Label Width="150" Height="25" Margin="301,64,487,189">Мощность двигла</Label>
+        <Label Width="150" Height="25" Margin="427,65,361,188">Макс. скорость</Label>
+        <ComboBox Width="150" Height="25" x:Name="comboBox1" Margin="6,34,782,219" IsEditable="True" SelectionChanged="comboBox1_SelectionChanged"></ComboBox>
+        <ComboBox Width="150" Height="25" x:Name="comboBox2" Margin="176,34,612,219" IsEditable="True" SelectionChanged="comboBox2_SelectionChanged"></ComboBox>
+        <ComboBox Height="25" x:Name="comboBox3" Margin="331,34,487,219" IsEditable="True"></ComboBox>
+        <ComboBox Height="25" x:Name="comboBox4" Margin="456,35,390,218" IsEditable="True"></ComboBox>
+        <ComboBox Height="25" x:Name="comboBox6" Margin="673,34,165,219" IsEditable="True"></ComboBox>
+        <TextBox Width="100" Height="25" x:Name="textBox1" Margin="778,34,60,220"></TextBox>
+        <TextBox Width="100" Height="25" x:Name="textBox2" Margin="560,35,278,218"></TextBox>
+        <TextBox Width="100" Height="25" x:Name="textBox3" Margin="10,89,828,164"></TextBox>
+        <TextBox Width="100" Height="25" x:Name="textBox4" Margin="176,89,662,164"></TextBox>
+        <TextBox Width="100" Height="25" x:Name="textBox5" Margin="305,89,533,164"></TextBox>
+        <TextBox Width="100" Height="25" x:Name="textBox6" Margin="427,89,411,164"></TextBox>
+        <Button Width="100" Height="30" x:Name="button1" Margin="427,228,411,20" Click="button1_Click_1" Content="Добавить"></Button>
+        <Button Width="100" Height="30" x:Name="button2" Margin="718,228,120,20" Click="button2_Click">Назад</Button>
     </Grid>
 </Window>

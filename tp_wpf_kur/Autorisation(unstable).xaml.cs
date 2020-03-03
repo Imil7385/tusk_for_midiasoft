@@ -74,7 +74,7 @@ namespace tp_wpf_kur
 
                 Window taskWindow = new Window1(id_parsing);
                 taskWindow.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {

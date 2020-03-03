@@ -54,8 +54,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="autor.xaml.cs">
+      <DependentUpon>autor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="buy_moto.xaml.cs">
       <DependentUpon>buy_moto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="kit_bay.xaml.cs">
+      <DependentUpon>kit_bay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="kit_new.xaml.cs">
+      <DependentUpon>kit_new.xaml</DependentUpon>
     </Compile>
     <Compile Include="moto_storage.xaml.cs">
       <DependentUpon>moto_storage.xaml</DependentUpon>
@@ -66,10 +75,20 @@
     <Compile Include="sale_moto.xaml.cs">
       <DependentUpon>sale_moto.xaml</DependentUpon>
     </Compile>
+    <Compile Include="sale_moto_not_upgrade.xaml.cs">
+      <DependentUpon>sale_moto_not_upgrade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sale_moto_upgrage.xaml.cs">
+      <DependentUpon>sale_moto_upgrage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
-    <Page Include="Autorisation.xaml">
+    <Page Include="autor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Autorisation%28unstable%29.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -77,11 +96,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Autorisation.xaml.cs">
-      <DependentUpon>Autorisation.xaml</DependentUpon>
+    <Compile Include="Autorisation%28unstable%29.xaml.cs">
+      <DependentUpon>Autorisation%28unstable%29.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="buy_moto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kit_bay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="kit_new.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,6 +121,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="sale_moto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sale_moto_not_upgrade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sale_moto_upgrage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,6 +162,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
