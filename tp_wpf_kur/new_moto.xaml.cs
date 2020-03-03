@@ -114,6 +114,35 @@ namespace tp_wpf_kur
             command.ExecuteNonQuery();
             conn.Close();
         }
+<<<<<<< HEAD
         #endregion
+=======
+
+        private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+            OleDbConnection conn1;
+            string connectionString = @"Provider = Microsoft.JET.OLEDB.4.0; Data Source = |DataDirectory|\\MotoDB.mdb";
+            OleDbCommand MyCommand1 = new OleDbCommand();
+            OleDbDataAdapter DataAdapter1 = new OleDbDataAdapter();
+            DataTable DT1 = new DataTable();
+            DataSet DS1 = new DataSet();
+            string text = "SELECT moto_list.moto_country, moto_list.moto_mark FROM moto_list WHERE(((moto_list.moto_country)Like '" + comboBox1.SelectedValue.ToString() + "')); ";
+            conn1 = new OleDbConnection(connectionString);
+            MyCommand1.Connection = conn1;
+            MyCommand1.CommandText = text;
+            DataAdapter1.SelectCommand = MyCommand1;
+            conn1.Open();
+            DataAdapter1.TableMappings.Add("TABLE", "Users");
+            DataAdapter1.Fill(DS1);
+            DT1 = DS1.Tables[0];
+            comboBox2.Items.Clear();
+            for (int i = 0; i < DT1.Rows.Count; i++)
+            {
+                comboBox2.Items.Add(DT1.Rows[i][1].ToString());
+            }
+            conn1.Close();
+        }
+>>>>>>> 0b1b76558e201433470489429e6674dbead53c84
     }
 }

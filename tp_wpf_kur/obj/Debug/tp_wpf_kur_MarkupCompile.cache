@@ -4,13 +4,22 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Imil\Desktop\tp_wpf_kur 0.7.7\tp_wpf_kur\obj\Debug\
+=======
+C:\Users\Imil\Desktop\tp_wpf_kur 0.5\tp_wpf_kur\obj\Debug\
+>>>>>>> 0b1b76558e201433470489429e6674dbead53c84
 tp_wpf_kur
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Imil\Desktop\tp_wpf_kur 0.7.7\tp_wpf_kur\App.xaml
 11-1734272563
+=======
+C:\Users\Imil\Desktop\tp_wpf_kur 0.5\tp_wpf_kur\App.xaml
+6-848614135
+>>>>>>> 0b1b76558e201433470489429e6674dbead53c84
 
 15-2049793948
 16-434409178

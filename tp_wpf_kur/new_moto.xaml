@@ -7,13 +7,18 @@
         mc:Ignorable="d"
         Title="new_moto" Height="308.502" Width="946.412">
     <Grid>
+<<<<<<< HEAD
         <Label Width="150" Height="25" Margin="6,9,782,244" x:Name="lab1">Страна производителя</Label>
+=======
+        <Label Width="150" Height="25" Margin="6,9,782,244">Страна производителя</Label>
+>>>>>>> 0b1b76558e201433470489429e6674dbead53c84
         <Label Width="150" Height="25" Margin="176,8,612,245">Марка</Label>
         <Label Width="150" Height="25" Margin="668,10,120,243">Модель</Label>
         <Label Width="150" Height="25" Margin="331,9,457,244">Класс мотоцикла</Label>
         <Label Width="150" Height="25" Margin="451,10,337,243">Тип двигателя</Label>
         <Label Width="150" Height="25" Margin="553,10,235,243">Объём двигателя</Label>
         <Label Height="25" Margin="778,10,40,243">Цена Руб.</Label>
+<<<<<<< HEAD
         <Label Height="25" Margin="10,64,819,189">Дата выпуска Год</Label>
         <Label Height="25" Margin="176,64,662,189">Вес</Label>
         <Label Width="150" Height="25" Margin="301,64,487,189">Мощность двигла</Label>
@@ -31,5 +36,15 @@
         <TextBox Width="100" Height="25" x:Name="textBox6" Margin="427,89,411,164"></TextBox>
         <Button Width="100" Height="30" x:Name="button1" Margin="427,228,411,20" Click="button1_Click_1" Content="Добавить"></Button>
         <Button Width="100" Height="30" x:Name="button2" Margin="718,228,120,20" Click="button2_Click">Назад</Button>
+=======
+        <ComboBox Width="150" Height="25" x:Name="comboBox1" Margin="6,34,782,219" IsEditable="True" SelectionChanged="comboBox1_SelectionChanged"></ComboBox>
+        <ComboBox Width="150" Height="25" x:Name="comboBox2" Margin="176,34,612,219" IsEditable="True"></ComboBox>
+        <ComboBox Height="25" x:Name="comboBox3" Margin="331,34,487,219" IsEditable="True"/>
+        <ComboBox Height="25" x:Name="comboBox4" Margin="456,35,390,218" IsEditable="True"/>
+        <ComboBox Height="25" x:Name="comboBox5" Margin="553,35,270,218" IsEditable="True"/>
+        <ComboBox Height="25" x:Name="comboBox6" Margin="673,34,165,219" IsEditable="True"/>
+        <TextBox Width="100" Height="25" x:Name="textBox1" Margin="778,34,60,220"></TextBox>
+        <Button Width="100" Height="30" x:Name="button1" Margin="427,228,411,20">Добавить</Button>
+>>>>>>> 0b1b76558e201433470489429e6674dbead53c84
     </Grid>
 </Window>
